@@ -13,15 +13,15 @@ OUTPUT_IMAGE = 'output/output'
 # 预训练的vgg模型路径
 VGG_MODEL_PATH = 'imagenet-vgg-verydeep-19.mat'
 # 图片宽度
-IMAGE_WIDTH = 450
+IMAGE_WIDTH = 900
 # 图片高度
-IMAGE_HEIGHT = 300
+IMAGE_HEIGHT = 600
 # 定义计算内容损失的vgg层名称及对应权重的列表
 CONTENT_LOSS_LAYERS = [('conv4_2', 0.5),('conv5_2',0.5)]
 # 定义计算风格损失的vgg层名称及对应权重的列表
 STYLE_LOSS_LAYERS = [('conv1_1', 0.2), ('conv2_1', 0.2), ('conv3_1', 0.2), ('conv4_1', 0.2), ('conv5_1', 0.2)]
 # 噪音比率
-NOISE = 0.5
+NOISE = 0.8
 # 图片RGB均值
 IMAGE_MEAN_VALUE = [128.0, 128.0, 128.0]
 # 内容损失权重
